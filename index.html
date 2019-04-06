@@ -1,15 +1,103 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-		<link rel="stylesheet" href="style.css"/>
-		<title> My first MapoxGL map </title>
-		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
-		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
-    </head>
-	
-	<body>
-		<H1>Example</H1>
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css" />
+	<title>Analysekaart Odeonpark</title>
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+	<h1>Analyse van voorzieningen rondom Odeonpark</h1>
+	<div class="container">
 		<div id="map"></div>
-		<script src="main.js"></script>
-	</body>
+		<div id="textbox">
+			<p id="textmain">Deze analyse kaart geeft de verschillende voorzieningen binnen 1 kilometer van Odeonpark aan.
+				Het doel van deze kaart is om meer inzicht te krijgen in wat voor voorzieningen er nog potentieel
+				missen in het Odeonpark. In combinatie met de enquête resultaten kunnen we de invulling voor missende de
+				voorzieningen bepalen.<br><br>
+
+				Het doorzichteg zwarte vlak geeft de buffer zone van 1 kilometer weer.
+			</p>
+			<ul class="legends">
+				<li>
+					<div class="Odeonpark">
+					</div>
+					<span> Odeonpark
+					</span>
+				</li>
+
+				<li>
+					<div class="park">
+					</div>
+					<span> Parken
+					</span>
+				</li>
+
+				<li>
+					<div class="sport">
+					</div>
+					<span> Sportcomplexen
+					</span>
+				</li>
+
+				<li>
+					<div class="supermarkt">
+					</div>
+					<span> Supermarkt
+					</span>
+				</li>
+
+				<li>
+					<div class="horeca">
+					</div>
+					<span> Horeca
+					</span>
+				</li>
+
+				<li>
+					<div class="uitgaan">
+					</div>
+					<span> Uitgaan
+					</span>
+				</li>
+
+				<li>
+					<div class="coffeeshop">
+					</div>
+					<span> Coffeeshop
+					</span>
+				</li>
+
+				<li>
+					<div class="hogeschool">
+					</div>
+					<span> Hogeschool
+					</span>
+				</li>
+
+				<li>
+					<div class="basisschool">
+					</div>
+					<span> Basisschool
+					</span>
+				</li>
+
+				<li>
+					<div class="kinderopvang">
+					</div>
+					<span> Kinderopvang
+					</span>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+
+</body>
+
 </html>
